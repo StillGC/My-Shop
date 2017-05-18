@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MyShop.Site" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>My Shop</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/Site.css" rel="stylesheet" />
+
+    <script src="../js/lib/jquery.min.js"></script>
+    <script src="../js/lib/bootstrap.min.js"></script>
+    <script src="../js/lib/bootstrap-notify.min.js"></script>
+    <script>
+        function OnErrorImg(objImg) {
+            objImg.src = "../img/blank_product.png";
+        }
+
+        function ShowAlert(sType, sMessage) {
+            switch (sType) {
+                case "success":
+                    $.notify({
+                        message: sMessage
+                    }, {
+                        type: 'success',
+                        delay: 1000,
+                        timer: 1000,
+                        animate: {
+                            enter: 'animated fadeInRight',
+                            exit: 'animated fadeOutRight'
+                        }
+                    });
+                    break;
+                case "warning":
+                    $.notify({
+                        message: sMessage
+                    }, {
+                        type: 'warning',
+                        delay: 1000,
+                        timer: 1000,
+                        animate: {
+                            enter: 'animated fadeInRight',
+                            exit: 'animated fadeOutRight'
+                        }
+                    });
+                    break;
+                case "danger":
+                    $.notify({
+                        message: sMessage
+                    }, {
+                        type: 'danger',
+                        delay: 1000,
+                        timer: 1000,
+                        animate: {
+                            enter: 'animated fadeInRight',
+                            exit: 'animated fadeOutRight'
+                        }
+                    });
+                    break;
+                default:
+                    $("#spann_role").text(sMessage);
+
+                    if (sMessage != "Administrator") {
+                        $(".RoleAdministrador").hide();
+                    }
+                    break;
+            }
+        }
+
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="ListProducts.aspx">My Shop</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input id="input_search" runat="server" type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="MyCartDetail.aspx">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>My Cart</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span id="spann_role"></span>
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class="dropdown-header RoleAdministrador">Products</li>
+                            <li class="RoleAdministrador"><a href="MyProducts.aspx">My Products</a></li>
+                            <li class="RoleAdministrador"><a href="FileUpload.aspx">File Upload</a></li>
+                            <li class="divider RoleAdministrador"></li>
+                            <li class="dropdown-header RoleAdministrador">User</li>
+                            <li class="RoleAdministrador"><a href="MyUsers.aspx">My Users</a></li>
+                            <li class="divider RoleAdministrador"></li>
+                            <li>
+                                <a href="../Login.aspx">My Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <form id="frm_Site" runat="server">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿#input_search {
+    min-width: 400px;
+}
+
+.navbar-toggle {
+    color: white;
+}
+
+.ratings {
+    color: #2196f3 !important;
+}
+
+.thumbnail {
+    opacity: 0.90;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+    .thumbnail:hover {
+        opacity: 1.00;
+        box-shadow: 0px 0px 10px #2196f3;
+    }
+
+.form-login {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 50px;
+}
+
+    .form-login table {
+        width: 100%;
+    }
+
+
+
+
