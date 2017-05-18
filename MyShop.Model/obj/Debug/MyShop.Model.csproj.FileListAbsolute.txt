@@ -1,0 +1,4 @@
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop.Model\bin\Debug\MyShop.Model.dll
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop.Model\bin\Debug\MyShop.Model.pdb
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop.Model\obj\Debug\MyShop.Model.dll
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop.Model\obj\Debug\MyShop.Model.pdb

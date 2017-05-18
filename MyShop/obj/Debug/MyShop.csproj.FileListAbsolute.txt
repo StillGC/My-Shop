@@ -1,0 +1,8 @@
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\bin\MyShop.dll.config
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\bin\MyShop.dll
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\bin\MyShop.pdb
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\bin\MyShop.Model.dll
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\bin\MyShop.Model.pdb
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\obj\Debug\MyShop.csprojResolveAssemblyReference.cache
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\obj\Debug\MyShop.dll
+D:\Proyectos Desarrollados\Aplicaciones Web\MyShop\MyShop\MyShop\obj\Debug\MyShop.pdb
